@@ -23,7 +23,7 @@
     background: none;
   }
 
-  input[type='button'] {
+  input[type='submit'] {
     background-color: #2980b9;
     height: 100%;
     width: 150px;
@@ -31,4 +31,13 @@
     cursor: pointer;
   }
 
+}
+
+.inactive{
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+.active{
+  background-color: #2980b9;
+  cursor: pointer;
 }
