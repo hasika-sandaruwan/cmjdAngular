@@ -6,9 +6,15 @@
     <div class="input-outer" style="margin-bottom: 10px">
       <input formControlName="email" placeholder="email" type="email" name="email" id="emailId">
     </div>
+      <p class="error" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">
+        email is required!
+      </p>
     <div class="input-outer" style="margin-bottom: 10px">
       <input formControlName="password" placeholder="password" type="password" name="password" id="passwordId">
     </div>
+      <p class="error" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+        password is required!
+      </p>
     <div class="input-outer" style="display: flex; justify-content: flex-end">
       <input [disabled]="loginForm.invalid" class="{{loginForm.invalid?'inactive': 'active'}}" type="submit" value="Login">
     </div>
