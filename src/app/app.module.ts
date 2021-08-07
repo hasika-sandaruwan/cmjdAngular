@@ -7,13 +7,15 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { UiOneComponent } from './components/ui-one/ui-one.component';
 import { UiTwoComponent } from './components/ui-two/ui-two.component';
 import { UiThreeComponent } from './components/ui-three/ui-three.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UiOneComponent,
     UiTwoComponent,
-    UiThreeComponent
+    UiThreeComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
