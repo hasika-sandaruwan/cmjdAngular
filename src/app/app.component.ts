@@ -7,5 +7,5 @@ import CustomerDTO from "./CustomerDTO";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent{
-
+  userName='';
 }

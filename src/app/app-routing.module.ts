@@ -8,7 +8,7 @@ import {NotFoundPageComponent} from "./components/not-found-page/not-found-page.
 const routes: Routes = [
   /*{path:'',component: UiOneComponent},*/
   {path:'', redirectTo:'/uiOne', pathMatch:'full'},
-  {path:'uiOne',component: UiOneComponent},
+  {path:'uiOne/:user',component: UiOneComponent},
   {path:'uiTwo',component: UiTwoComponent},
   {path:'uiThree',component: UiThreeComponent},
   {path: '**', component:NotFoundPageComponent}

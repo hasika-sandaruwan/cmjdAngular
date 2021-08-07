@@ -1,10 +1,10 @@
 
 <div class="text-wrap">
-  <input type="text">
+  <input type="text" [(ngModel)]="userName">
 </div>
 <br>
 <div class="button-bar">
-  <button class="btn" routerLink="/uiOne" routerLinkActive="active">Load UI One</button>
+  <button class="btn" routerLink="/uiOne/{{userName}}" routerLinkActive="active">Load UI One</button>
   <button class="btn" routerLink="/uiTwo" routerLinkActive="active">Load UI Two</button>
   <button class="btn" routerLink="/uiThree" routerLinkActive="active">Load UI Three</button>
 </div>

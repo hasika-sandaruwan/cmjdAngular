@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-ui-one',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiOneComponent implements OnInit {
 
-  constructor() { }
+  importedUser: string | null = '';
+
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
+    // this.importedUser = this.activatedRoute.snapshot.paramMap.get('user');
+    this.activatedRoute.paramMap.subscribe(response=>{
+      this.importedUser=response.get('user');
+    },error => {
+      alert(error);
+      console.log(error)
+    });
   }
 
 }
