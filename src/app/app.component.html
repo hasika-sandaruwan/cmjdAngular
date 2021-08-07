@@ -1,9 +1,13 @@
-<!-- directives (ngIf,ngFor)-->
-
-<button (click)="this.status=!this.status">
-  Show And Hide
-</button>
-
-<div *ngIf="status">
-
-</div>
+<ul>
+  <li *ngFor="let tempData of customerArray;">
+    <span>
+      <span>Id : </span>
+      <span>{{tempData.id}}</span>
+    </span>
+    &nbsp;
+    <span>
+      <span>Name : </span>
+      <span>{{tempData.name}}</span>
+    </span>
+  </li>
+</ul>
