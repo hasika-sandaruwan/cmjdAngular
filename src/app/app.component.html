@@ -1,13 +1,7 @@
-<ul>
-  <li *ngFor="let tempData of customerArray;">
-    <span>
-      <span>Id : </span>
-      <span>{{tempData.id}}</span>
-    </span>
-    &nbsp;
-    <span>
-      <span>Name : </span>
-      <span>{{tempData.name}}</span>
-    </span>
-  </li>
-</ul>
+<div class="button-bar">
+  <button class="btn" routerLink="/uiOne">Load UI One</button>
+  <button class="btn" routerLink="/uiTwo">Load UI Two</button>
+  <button class="btn" routerLink="/uiThree">Load UI Three</button>
+</div>
+<br>
+<router-outlet></router-outlet>

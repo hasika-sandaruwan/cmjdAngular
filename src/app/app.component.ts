@@ -6,20 +6,6 @@ import CustomerDTO from "./CustomerDTO";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  customerArray:CustomerDTO[]=[];
+export class AppComponent{
 
-  ngOnInit(): void {
-
-    this.customerArray.push(
-      new CustomerDTO('001','Nimal')
-    );
-    this.customerArray.push(
-      new CustomerDTO('002','Banadara')
-    );
-    this.customerArray.push(
-      new CustomerDTO('003','Samantha')
-    );
-
-  }
 }
