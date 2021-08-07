@@ -1,17 +1,18 @@
 <!-- Forms (template driven approach ***,reactive forms)-->
 <div class="outer">
   <div class="form-outer">
+    <form [formGroup]="loginForm">
     <h3 style="text-align: center">Login</h3>
     <div class="input-outer" style="margin-bottom: 10px">
-      <input placeholder="email" type="email" name="email" id="emailId">
+      <input formControlName="email" placeholder="email" type="email" name="email" id="emailId">
     </div>
     <div class="input-outer" style="margin-bottom: 10px">
-      <input placeholder="password" type="password" name="password" id="passwordId">
+      <input formControlName="password" placeholder="password" type="password" name="password" id="passwordId">
     </div>
     <div class="input-outer" style="display: flex; justify-content: flex-end">
-      <input type="button" value="Login">
+      <input (click)="login()" type="button" value="Login">
     </div>
-
+    </form>
   </div>
 </div>
 
